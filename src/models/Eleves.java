@@ -11,12 +11,13 @@ public class Eleves extends Personnes{
         this.classe = classe;
     }
 
+    public Eleves(){}
+
     //Getters
     public String getClasse() {return classe;}
 
     public double[] getNotes() {return notes;}
 
-    public void salut(){
-        System.out.println("Salut");
-    }
+    public String toString(){return null;}
+
 }

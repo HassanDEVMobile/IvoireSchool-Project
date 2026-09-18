@@ -3,17 +3,19 @@ package models;
 public class Professeurs extends Personnes{
     //Attribut
      private String matiereEnseigner;
-     private String anneeExperience;
+     private int anneeExperience;
 
      //Constructeur
-    public Professeurs(String identifiant, String nom, String prenom, int age,String matiereEnseigner,String anneeExperience){
+    public Professeurs(String identifiant, String nom, String prenom, int age,String matiereEnseigner,int anneeExperience){
         super(identifiant, nom, prenom, age);
         this.matiereEnseigner = matiereEnseigner;
         this.anneeExperience = anneeExperience;
     }
 
+    public Professeurs(){}
+
     //Getters
     public String getMatiereEnseigner() {return matiereEnseigner;}
 
-    public String getAnneeExperience() {return anneeExperience;}
+    public int getAnneeExperience() {return anneeExperience;}
 }

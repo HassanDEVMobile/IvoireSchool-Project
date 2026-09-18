@@ -18,6 +18,7 @@ public abstract class Personnes {
       this.age = age;
     }
 
+    public Personnes(){}
     //Getters
     public String getIdentifiant() {return identifiant;}
 
